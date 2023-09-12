@@ -1,5 +1,5 @@
-import Header from "./Header"
-import Movies from "./Movies"
+import Header from "../components/Header"
+import Movies from "../components/Movies"
 
 function Homepage({ data }) {
     return (

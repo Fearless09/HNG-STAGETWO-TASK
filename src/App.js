@@ -1,8 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import Header from './components/Header';
-import Movies from './components/Movies';
-import Homepage from './components/Homepage';
+import Homepage from './pages/Homepage';
+import MovieDetails from './pages/MovieDetails';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [data, setData] = useState([])
@@ -18,7 +18,14 @@ function App() {
 
   return (
     <>
-      <Homepage data={data} />
+      <Routes>
+        <Route index element={
+          <Homepage data={data} />
+        } />
+        <Route path='/movies/:id' element={
+          <MovieDetails />
+        } />
+      </Routes>
     </>
   );
 }
