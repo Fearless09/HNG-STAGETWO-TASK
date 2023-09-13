@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import Card from '../components/Card'
 import Loading from '../components/Loading'
 import { useParams } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 function Search() {
     const [data, setData] = useState([])
@@ -45,6 +46,8 @@ function Search() {
                     </>
                 ) : <h1 className='text-lg text-center font-medium mb-10'>No results found for <span className='uppercase'>'{title}'</span></h1>}
             </div>
+
+            <Footer />
         </>
     )
 }
