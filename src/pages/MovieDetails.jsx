@@ -60,7 +60,7 @@ function MovieDetails() {
                     <h3 data-testid='movie-release-date' className="mb-3">{utcDate(data.release_date)}</h3>
                     <h3 data-testid='movie-runtime'>{data.runtime} minutes</h3>
                 </div>
-                <p data-testid='movie-overview' className="max-w-[774px] text-lg">{data.overview}</p>
+                <p data-testid='movie-overview' className="max-w-[600px] text-lg">{data.overview}</p>
                 <div className="text-lg font-medium my-5">
                     <h3 className="mb-3">Language: <span className="uppercase">{data.original_language}</span></h3>
                     <h3 className="mb-3">Status: {data.status}</h3>
