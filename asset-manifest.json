@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HNG-STAGETWO-TASK/static/css/main.2fe2033f.css",
-    "main.js": "/HNG-STAGETWO-TASK/static/js/main.a416c42d.js",
+    "main.js": "/HNG-STAGETWO-TASK/static/js/main.d88115c1.js",
     "static/js/787.8d59e195.chunk.js": "/HNG-STAGETWO-TASK/static/js/787.8d59e195.chunk.js",
     "static/media/Logo.svg": "/HNG-STAGETWO-TASK/static/media/Logo.ddc4f46c13911d43dde0ee4afc957cde.svg",
     "static/media/tv.svg": "/HNG-STAGETWO-TASK/static/media/tv.6d662a43ac01c85016aa1b4ba76ed9dc.svg",
@@ -9,11 +9,11 @@
     "static/media/imdb.svg": "/HNG-STAGETWO-TASK/static/media/imdb.c4d6d85a37edc2a52d437a7fcf06b597.svg",
     "index.html": "/HNG-STAGETWO-TASK/index.html",
     "main.2fe2033f.css.map": "/HNG-STAGETWO-TASK/static/css/main.2fe2033f.css.map",
-    "main.a416c42d.js.map": "/HNG-STAGETWO-TASK/static/js/main.a416c42d.js.map",
+    "main.d88115c1.js.map": "/HNG-STAGETWO-TASK/static/js/main.d88115c1.js.map",
     "787.8d59e195.chunk.js.map": "/HNG-STAGETWO-TASK/static/js/787.8d59e195.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fe2033f.css",
-    "static/js/main.a416c42d.js"
+    "static/js/main.d88115c1.js"
   ]
 }
