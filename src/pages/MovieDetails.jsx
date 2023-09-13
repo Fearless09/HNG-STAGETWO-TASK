@@ -37,19 +37,17 @@ function MovieDetails() {
             <div className='bg-gray-900 p-5'>
                 <NavBar />
             </div>
-            <div className="relative">
-                {data.backdrop_path && (
-                    <>
-                        <img src={`https://image.tmdb.org/t/p/w500/${data?.backdrop_path}`} className="w-full max-h-[80vh]" alt="" />
-                        <div className="absolute w-full h-full top-0 left-0 bg-[#00000059] text-white flex flex-col items-center justify-center">
-                            <button className="p-7 rounded-full bg-[#ffffff40]">
-                                <FaPlay color="white" size={'54px'} />
-                            </button>
-                            <h1 className="text-2xl font-medium mt-3">Watch Trailer</h1>
-                        </div>
-                    </>
-                )}
-            </div>
+            {data.backdrop_path && (
+                <div className="relative">
+                    <img src={`https://image.tmdb.org/t/p/w500/${data?.backdrop_path}`} className="w-full max-h-[80vh]" alt="" />
+                    <div className="absolute w-full h-full top-0 left-0 bg-[#00000059] text-white flex flex-col items-center justify-center">
+                        <button className="p-7 rounded-full bg-[#ffffff40]">
+                            <FaPlay color="white" size={'54px'} />
+                        </button>
+                        <h1 className="text-2xl font-medium mt-3">Watch Trailer</h1>
+                    </div>
+                </div>
+            )}
             <div className="container mx-auto p-5">
                 {data.genres && (
                     data.genres.map((genre, index) => (
