@@ -2,12 +2,12 @@ import NavBar from './NavBar'
 import Hero from './Hero'
 
 function Header({ data }) {
-
+    const random = Math.floor(Math.random() * 11)
     return (
-        data && data[0] && (
-            <header className='p-5 min-h-[80vh]' style={{ background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('https://image.tmdb.org/t/p/w500/${data[0].backdrop_path}')`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
-                <NavBar data={data} />
-                <Hero data={data[0]} />
+        data && data[random] && (
+            <header className='p-5 min-h-[75vh] md:min-h-[90vh] bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url('https://image.tmdb.org/t/p/w500/${data[random].backdrop_path}')` }}>
+                <NavBar />
+                <Hero data={data[random]} />
             </header>
         )
     )

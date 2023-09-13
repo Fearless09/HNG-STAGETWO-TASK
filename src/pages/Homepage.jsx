@@ -5,7 +5,7 @@ function Homepage({ data }) {
     return (
         <div>
             <Header data={data} />
-            <Movies data={data.slice(1, 11)} />
+            <Movies data={data.slice(0, 10)} />
         </div>
     )
 }
