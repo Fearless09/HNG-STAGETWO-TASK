@@ -1,5 +1,7 @@
 import { FaCirclePlay } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import imdbSvg from '../assets/imdb.svg'
+import grapeSvg from '../assets/grape.svg'
 
 function Hero({ data }) {
     const genreObj = {
@@ -23,7 +25,7 @@ function Hero({ data }) {
         10752: 'War',
         37: 'Western'
     }
-    
+
     return (
         <div className="container mx-auto">
             {data && (
@@ -31,11 +33,11 @@ function Hero({ data }) {
                     <h1 className="text-5xl font-semibold mt-14 mb-8 md:mt-32 md:mb-16">{data.original_title}</h1>
                     <div className="flex items-center justify-between mb-7">
                         <div className='flex items-center gap-3'>
-                            <img src="/imdb.svg" className='w-[2.5rem]' alt="" />
+                            <img src={imdbSvg} className='w-[2.5rem]' alt="" />
                             <p>{data.vote_average} / 10</p>
                         </div>
                         <div className='flex items-center gap-2'>
-                            <img src="/grape.svg" className='w-[1.5rem]' alt="" />
+                            <img src={grapeSvg} className='w-[1.5rem]' alt="" />
                             <p>{data.vote_average * 10}%</p>
                         </div>
                     </div>

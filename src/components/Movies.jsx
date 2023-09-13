@@ -2,7 +2,6 @@ import { GrFormNext } from 'react-icons/gr'
 import Card from "./Card"
 
 function Movies({ data }) {
-    // console.log(data)
     return (
         <div className="container mx-auto p-5 mt-14">
             <div className="flex items-center justify-between mb-10">

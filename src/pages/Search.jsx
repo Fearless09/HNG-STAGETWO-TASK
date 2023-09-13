@@ -8,8 +8,6 @@ import Footer from '../components/Footer'
 function Search() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-    // https://api.themoviedb.org/3/movie/{movie_id}api_key=0687dcb49bdbc30b3f8f64eed71b321a
-
     const { title } = useParams()
 
     useEffect(() => {
@@ -25,8 +23,6 @@ function Search() {
                 setLoading(false)
             });
     }, [title])
-
-    // console.log(data)
 
     return (
         <>

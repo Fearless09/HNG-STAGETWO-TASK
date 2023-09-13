@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { FaHeart } from 'react-icons/fa'
+import imdbSvg from '../assets/imdb.svg'
+import grapeSvg from '../assets/grape.svg'
 
 function Card({ data }) {
     const [color, setColor] = useState(false)
@@ -43,11 +45,11 @@ function Card({ data }) {
             </Link>
             <div className="flex items-center justify-between">
                 <div className='flex items-center gap-3'>
-                    <img src="/imdb.svg" className='w-[2.25rem]' alt="" />
+                    <img src={imdbSvg} className='w-[2.25rem]' alt="" />
                     <p>{data.vote_average} / 10</p>
                 </div>
                 <div className='flex items-center gap-2'>
-                    <img src="/grape.svg" className='w-[1.25rem]' alt="" />
+                    <img src={grapeSvg} className='w-[1.25rem]' alt="" />
                     <p>{data.vote_average * 10}%</p>
                 </div>
             </div>
