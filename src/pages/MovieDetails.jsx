@@ -34,10 +34,10 @@ function MovieDetails() {
         <>
             {loading && <Loading />}
 
+            <div className='bg-gray-900 p-5'>
+                <NavBar />
+            </div>
             <div className="relative">
-                <div className='bg-gray-900 p-5'>
-                    <NavBar />
-                </div>
                 {data.backdrop_path && (
                     <>
                         <img src={`https://image.tmdb.org/t/p/w500/${data?.backdrop_path}`} className="w-full max-h-[80vh]" alt="" />
